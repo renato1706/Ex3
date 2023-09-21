@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+
+<body>
+    <script>
+        const idade = prompt("Digite a sua idade:");
+
+        const idadeNumero = parseInt(idade);
+
+        if (!isNaN(idadeNumero)) {
+
+            if (idadeNumero > 100) {
+                alert("Você é o Highlander?");
+            } else if (idadeNumero >= 18) {
+                alert("Parabéns! Você é maior de idade.");
+            } else {
+                alert("Aguarde seus 18 anos! Você ainda é menor de idade.");
+            }
+        } else {
+            alert("Por favor, digite a idade apenas com números.");
+        }
+
+    </script>
+</body>
+
+</html>

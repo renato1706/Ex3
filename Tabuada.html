@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+
+<body>
+    <script>
+        const valor = parseInt(prompt('Digite um número:'));
+
+        if (!isNaN(valor)) {
+            let tabuada = '';
+            for (let numero = 1; numero <= 10; numero++) {
+                const resultado = valor * numero;
+                tabuada += `${valor} x ${numero} = ${resultado}\n`;
+            }
+            alert(`A tabuada para ${valor} é:\n\n${tabuada}`);
+        } else {
+            alert('É permitido digitar apenas números!');
+        }
+
+    </script>
+</body>
+
+</html>
